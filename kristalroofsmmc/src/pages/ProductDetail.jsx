@@ -1,5 +1,9 @@
 import React from 'react'
-import styles./ from "../pages.module.css";
+import BannerAndSearch from "../layout/BannerAndSearchBar";
+import Navbar from "../layout/Navbar";
+import Footer from '../layout/Footer';
+import styles from "./pages.module.css";
+
 const ProductDetail = () => {
   return (
     <div>ProductDetail</div>
