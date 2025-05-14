@@ -5,7 +5,7 @@ import App from "./root/App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./root/Dashboard";
-import store from "./app/store";
+import { store } from "./app/store";
 import { Provider } from "react-redux";
 
 // Define the loadRootData function
