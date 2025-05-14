@@ -5,6 +5,8 @@ import App from "./root/App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./root/Dashboard";
+import store from "./app/store";
+import { Provider } from "react-redux";
 
 // Define the loadRootData function
 const loadRootData = async () => {
@@ -35,7 +37,11 @@ let router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={router} />);
+root.render(
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 import styles from "./pages.module.css";
+import BannerAndSearch from "../layout/BannerAndSearch1";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 const Calculator = () => {
   return (
-    <div>Calculator</div>
-  )
-}
+    <>
+      <BannerAndSearch />
+      <Navbar />
+      <Footer />
+    </>
+  );
+};
 
-export default Calculator
+export default Calculator;

@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
 import styles from "./pages.module.css";
+import BannerAndSearch from "../layout/BannerAndSearch1";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 const Products = () => {
   return (
-    <div>Products</div>
-  )
-}
+    <>
 
-export default Products
+      <BannerAndSearch />
+      <Navbar />
+      <Footer />
+
+    </>
+  );
+};
+
+export default Products;
