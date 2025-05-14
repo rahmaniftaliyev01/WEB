@@ -1,5 +1,9 @@
 // src/features/contact/contactSlice.js
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
+const contactAdapter = createEntityAdapter({
+  selectId: (contact) => contact.id,
+  sortComparer: (a, b) => a.name.localeCompare(b.name),
+});
 
 const initialState = {
   formData: {
@@ -7,8 +11,9 @@ const initialState = {
     email: "",
     message: "",
   },
-  status: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
+  status: "idle", // idle | loading | succeeded | failed
   error: null,
+  contacts: contactAdapter.getInitialState(),
 };
 
 const contactSlice = createSlice({
