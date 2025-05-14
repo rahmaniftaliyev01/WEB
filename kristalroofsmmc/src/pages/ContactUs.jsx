@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../styles/AboutUs.module.css";
+import styles from "./pages.module.css";
 const ContactUs = () => {
   return (
       <div>ContactUs</div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./common.module.css";
 
 const FixedComponent = () => {
   return (
